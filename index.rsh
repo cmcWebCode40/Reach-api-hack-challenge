@@ -9,6 +9,8 @@ export const main = Reach.App(() => {
 		...interactInterface,
 	});
 
+	const B = API("Bob", {});
+
 	init();
 
 	Alice.only(() => {
@@ -17,4 +19,3 @@ export const main = Reach.App(() => {
 
 	exit();
 });
-
